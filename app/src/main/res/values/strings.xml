@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Expense Manager App</string>#
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="items">
+        <item> </item>
+
+        <item> Tiền lương + thưởng</item>
+        <item> Lương hưu</item>
+        <item> Tiền làm thêm</item>
+        <item> Kinh doanh</item>
+        <item> Bảo hiểm</item>
+        <item> Tiền lãi</item>
+        <item> Khác</item>
+        <item> </item>
+
+        <item> Thế chấp/ Thuê</item>
+        <item> Điện/Nước</item>
+        <item> Điện thoại </item>
+        <item> Truyền hình cáp/ vệ tinh Internet</item>
+        <item> Trang phục - Phụ kiện</item>
+        <item> Ăn uống tại nhà</item>
+        <item> Ăn uống nhà hàng</item>
+        <item> Café/ Đồ uống/Nước ngọt</item>
+        <item> Xăng/Dầu</item>
+        <item> Sửa chữa/Bảo dưỡng</item>
+        <item> Thuốc</item>
+        <item> Cấp cứu/ Khẩn cấp</item>
+        <item> Học phí ĐH, Cao đẳng</item>
+        <item> Khác</item>
+    </string-array>
+</resources>

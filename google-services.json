@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "477698811012",
+    "firebase_url": "https://expensi-manager-default-rtdb.firebaseio.com",
+    "project_id": "expensi-manager",
+    "storage_bucket": "expensi-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477698811012:android:fd71bc03427a32be7b0ed1",
+        "android_client_info": {
+          "package_name": "com.example.expensemanagerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477698811012-1c8mb68bdoogh01sqs52ofiuckqi25vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.expensemanagerapp",
+            "certificate_hash": "f567c52f39e760cd40c9ec06a5016337e086c1b7"
+          }
+        },
+        {
+          "client_id": "477698811012-12t206tjm6mnaldvm3v549r7g548b11i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZhLSIFc9eAkj3OB1B-6A7qF00S2fsetw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477698811012-12t206tjm6mnaldvm3v549r7g548b11i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
