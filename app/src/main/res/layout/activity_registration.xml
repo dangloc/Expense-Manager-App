@@ -9,6 +9,15 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="Expense Manager"
+        />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

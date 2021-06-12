@@ -10,20 +10,25 @@
     <string-array name="items">
         <item> </item>
 
-        <item> Tiền lương + thưởng</item>
+        <item> Tiền lương+thưởng</item>
         <item> Lương hưu</item>
         <item> Tiền làm thêm</item>
         <item> Kinh doanh</item>
         <item> Bảo hiểm</item>
         <item> Tiền lãi</item>
+        <item> Cổ tức</item>
+        <item> Cấp dưỡng</item>
+        <item> Tiền hoàn lại</item>
+        <item> Trợ cấp</item>
         <item> Khác</item>
         <item> </item>
 
         <item> Thế chấp/ Thuê</item>
         <item> Điện/Nước</item>
-        <item> Điện thoại </item>
-        <item> Truyền hình cáp/ vệ tinh Internet</item>
-        <item> Trang phục - Phụ kiện</item>
+        <item> Cước Điện thoại </item>
+        <item> Truyền hình cáp</item>
+        <item> Internet </item>
+        <item> Trang phục-Phụ kiện</item>
         <item> Ăn uống tại nhà</item>
         <item> Ăn uống nhà hàng</item>
         <item> Café/ Đồ uống/Nước ngọt</item>
@@ -32,6 +37,16 @@
         <item> Thuốc</item>
         <item> Cấp cứu/ Khẩn cấp</item>
         <item> Học phí ĐH, Cao đẳng</item>
+        <item> Dụng cụ gia đình</item>
+        <item> Đăng ký/ Cấp phép</item>
+        <item> Công cụ làm việc</item>
+        <item> Quà tặng</item>
+        <item> Quyên góp</item>
+        <item> Giải trí</item>
+        <item> Thực phẩm</item>
+        <item> Báo/Tạp chí</item>
+        <item> Phí thường niên</item>
+        <item> Trả định kỳ</item>
         <item> Khác</item>
     </string-array>
 </resources>

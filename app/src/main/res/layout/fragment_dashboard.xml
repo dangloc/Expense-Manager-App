@@ -18,6 +18,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
@@ -36,7 +37,11 @@
                         android:textColor="@android:color/black"
                         android:text="Income"/>
 
+
+
                 </RelativeLayout>
+
+
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -53,6 +58,24 @@
 
                 </RelativeLayout>
 
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@android:color/black"
+                        android:text="Total"/>
+
+
+
+                </RelativeLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -60,6 +83,8 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="7dp"
                 android:layout_height="wrap_content">
+
+
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -92,6 +117,24 @@
                         android:text="000.00"/>
 
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/conlai_result"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@android:color/black"
+                        android:text="000.00"/>
+
+                </RelativeLayout>
+
+
 
             </LinearLayout>
 

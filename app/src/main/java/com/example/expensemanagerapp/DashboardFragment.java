@@ -60,12 +60,13 @@ public class DashboardFragment extends Fragment {
     //dashboard income and expense result..
     private TextView totalIncomeResult;
     private TextView totalExpenseResult;
+    private TextView totalConlai;
 
     //firebase
     private FirebaseAuth mAuth;
     private DatabaseReference mIncomeDatabase;
     private DatabaseReference mExpenseDatabase;
-
+    public    double x = 0;
     //recycler view
     private RecyclerView mRecyclerIncome;
     private RecyclerView mRecyclerExpense;
@@ -103,6 +104,7 @@ public class DashboardFragment extends Fragment {
 
         totalIncomeResult=myview.findViewById(R.id.income_set_result);
         totalExpenseResult=myview.findViewById(R.id.expense_set_resulr);
+        totalConlai=myview.findViewById(R.id.conlai_result);
 
         //Recycler
         mRecyclerIncome=myview.findViewById(R.id.recycler_income);
@@ -146,6 +148,10 @@ public class DashboardFragment extends Fragment {
             }
         });
 
+
+
+
+
         //calculate total income..
 
         mIncomeDatabase.addValueEventListener(new ValueEventListener() {
@@ -172,6 +178,34 @@ public class DashboardFragment extends Fragment {
             }
         });
 
+        mIncomeDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange( DataSnapshot snapshot) {
+
+                int totalsum=0;
+
+
+                for (DataSnapshot mysnap:snapshot.getChildren()){
+                    Data data=mysnap.getValue(Data.class);
+
+                    totalsum+=data.getAmount();
+                    double y=totalsum;
+                    double z = y-x;
+
+                    String stResult=String.valueOf(z);
+
+                    totalConlai.setText(stResult+".000");
+                }
+
+            }
+
+            @Override
+            public void onCancelled( DatabaseError error) {
+
+            }
+        });
+
+
         //calculate total expense..
         mExpenseDatabase.addValueEventListener(new ValueEventListener() {
             @Override
@@ -184,10 +218,9 @@ public class DashboardFragment extends Fragment {
                     totalsum+=data.getAmount();
 
                     String strTotalSum=String.valueOf(totalsum);
-
+                    x = Double.parseDouble(strTotalSum);
                     totalExpenseResult.setText(strTotalSum+".000");
                 }
-
             }
 
             @Override
@@ -195,10 +228,36 @@ public class DashboardFragment extends Fragment {
 
             }
         });
+//        ValueEventListener conlai = new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot){
+//
+//                double a,b;
+//                a = Double.parseDouble(totalIncomeResult.getText().toString());
+//                b = Double.parseDouble(totalExpenseResult.getText().toString());
+//
+//                for (DataSnapshot mysnapshot:dataSnapshot.getChildren()){
+//
+//                    Data data=mysnapshot.getValue(Data.class);
+//                    a-=data.getAmount();
+//
+//                    String conlairesult= String.valueOf(1);
+//
+//                    totalConlai.setText(conlairesult+".000");
+//
+//
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+//
+//            }
+//        };
 
 
-
-        //Recycler
+            //Recycler
         LinearLayoutManager layoutManagerIncome=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         layoutManagerIncome.setStackFromEnd(true);
         layoutManagerIncome.setReverseLayout(true);
